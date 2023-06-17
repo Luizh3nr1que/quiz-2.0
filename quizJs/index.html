@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="load.css">
     <!-- fim css -->
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!-- Biblioteca normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -25,20 +28,11 @@
 
 <body>
 
-    <div class="fundoLoad">
-        <div class="loader">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </div>
-
     <div class="progress">
         <div class="progress--bar"></div>
     </div>
 
-    <h1>Quiz JavaScript</h1>
+    <h1>Inicio <a class="iconHome" href="../index.html"><ion-icon name="home"></ion-icon></a></h1>
 
     <div class="questionArea">
         <div class="question">...</div>
@@ -50,11 +44,7 @@
         <div class="scorePct"></div>
         <div class="scoreText2"></div>
 
-        <div class="buttons">
-            <button id="refazer" class="button">Refazer</button>
-            <button id="inicio" class="ButtonVoltar">Inicio</button>
-        </div>
-
+        <button id="refazer" class="button">Refazer</button>
     </div>
 
 

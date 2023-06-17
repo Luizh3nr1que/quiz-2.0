@@ -114,15 +114,3 @@ buttonRefazer.addEventListener('click', () => {
     window.location.reload();
 });
 
-
-//funcçao de click para encaminhar o user pra o inicio
-buttonInicio.addEventListener('click', () => {
-    window.location.href = '../index.html';
-});
-
-
-//funçao tela de loader
-window.addEventListener("load", function () {
-    const loader = document.querySelector('.fundoLoad')
-    loader.style.display = "none";
-});
