@@ -18,12 +18,16 @@ body {
     background-color: rgb(14, 14, 14);
 }
 
-h1 {
+a {
+    text-decoration: none;
     color: #FFF;
     margin: 20px 0;
     font-weight: bold;
     display: flex;
     gap: 10px;
+    align-items: center;
+    font-size: 30px;
+    display: flex;
     align-items: center;
 }
 
