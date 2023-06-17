@@ -1,0 +1,58 @@
+.fundoLoad {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+    z-index: 1900;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1999;
+}
+
+.bar {
+    width: 7px;
+    height: 18px;
+    margin: 0 9px;
+    border-radius: 10px;
+    animation: loading_5192 1s ease-in-out infinite;
+    background-color: #0e8f6a;
+}
+
+.bar:nth-child(1) {
+    animation-delay: 0.01s;
+}
+
+.bar:nth-child(2) {
+    animation-delay: 0.09s;
+}
+
+.bar:nth-child(3) {
+    animation-delay: 0.19s;
+}
+
+.bar:nth-child(4) {
+    animation-delay: 0.29s;
+}
+
+@keyframes loading_5192 {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1, 2.5);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}

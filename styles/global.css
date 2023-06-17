@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+header {
+    max-width: 70em;
+    display: flex;
+    align-items: center;
+    color: rgb(159, 159, 159);
+    margin: 30px auto;
+
+}
+
+
+header img {
+    width: 230px;
+    padding-right: 10px;
+    border-right: 1px solid rgb(23, 23, 23);
+    cursor: pointer;
+}
+
+header p {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.conteudo {
+    max-width: 70em;
+    margin: auto;
+    height: 650px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.quiz {
+    color: rgb(159, 159, 159);
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 5px 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.quiz img {
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.quiz img:hover {
+    border: 2px solid #0e8f6a;
+}
+
+.clicked {
+    border: 2px solid #0e8f6a;
+}
+
+.inicio {
+    max-width: 670px;
+    height: 250px;
+    color: rgb(159, 159, 159);
+    padding: 30px;
+    margin: 0 auto;
+    font-weight: bold;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    position: relative;
+}
+
+.inicio p {
+    margin-bottom: 8px;
+}
+
+
+.descQuiz {
+    max-width: 670px;
+    height: 200px;
+    color: rgb(159, 159, 159);
+    padding: 30px;
+    margin: 0 auto;
+    font-weight: bold;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    position: relative;
+}
+
+.conteudoQuizz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudoQuizz button {
+    border: none;
+    background-color: #297962;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.conteudoQuizz button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.conteudoQuizz button:hover {
+    background-color: #0e8f6a;
+}
+
+
+.animationSlider {
+    animation: slide 0.5s linear forwards;
+
+}
+
+@keyframes slide {
+    to {
+        opacity: 1;
+        left: 0;
+    }
+
+    from {
+        opacity: 0;
+        left: -20%;
+    }
+}

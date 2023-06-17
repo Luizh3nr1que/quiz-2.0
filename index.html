@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/responsiveGlobal.css">
+    <link rel="stylesheet" href="styles/load.css">
+    <!-- fim css -->
+
+    <!-- Biblioteca normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Biblioteca normalize -->
+
+    <link rel="shortcut icon" href="icon/favicon-32x32.png" type="image/x-icon">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <div class="fundoLoad">
+        <div class="loader">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+
+    <header>
+        <img class="home" src="img/logo.png">
+        <p>Desperte sua mente com um quiz desafiador!</p>
+    </header>
+
+
+    <main>
+
+        <section class="container">
+
+            <div class="conteudo">
+
+                <div class="quiz">
+                    <h1>Quizz</h1>
+                    <img id="imgHtml" src="img/html.png" draggable="false">
+                    <img id="imgCss" src="img/css.png" draggable="false">
+                    <img id="imgJs" src="img/js.png" draggable="false">
+                </div>
+
+                <div class="inicio">
+                    <h1>Bem-vindo ao quizz</h1>
+
+                    <p>O quiz tem 3 modos <span style="color: #297962;">HTML, CSS, E JAVASCRIPT</span></p>
+                    <P>Cada quiz tem 10 perguntas</P>
+                    <p>as resposta são de selecionar e no final mostra quantas você acertou</p>
+                    <p>Para abrir o quiz veja qual iniciar e clique na imagem ao lado</p>
+                </div>
+
+                <div class="descQuiz" style="display: none;">
+
+                    <div class="html" style="display: none;">
+                        <h1>Bem-vindo ao quizz de HTML</h1>
+
+                        <div class="conteudoQuizz">
+                            <p>Dificuldade:<span style="color: #297962;">Facil</span> </p>
+
+                            <button><a href="./quizHtml/index.html">Ir pra o quiz</a></button>
+                        </div>
+                    </div>
+
+                    <div class="css" style="display: none;">
+                        <h1>Bem-vindo ao quizz de CSS</h1>
+
+                        <div class="conteudoQuizz">
+                            <p>Dificuldade:<span style="color: #297962;">Facil</span> </p>
+
+                            <button><a href="./quizCss/index.html">Ir pra o quiz</a></button>
+                        </div>
+                    </div>
+
+                    <div class="js" style="display: none;">
+                        <h1>Bem-vindo ao quizz de JavaScript</h1>
+
+                        <div class="conteudoQuizz">
+                            <p>Dificuldade:<span style="color: #bba738;">Intermediario</span> </p>
+
+                            <button><a href="./quizJs/index.html">Ir pra o quiz</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="scripts/global.js"></script>
+</body>
+
+</html>
+
+<!--  | © Desenvolvido por luiz Henrique 🚀 -->
