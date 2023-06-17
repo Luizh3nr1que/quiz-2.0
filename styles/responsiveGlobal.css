@@ -22,7 +22,6 @@
 
 @media screen and (max-width:695px) {
     .conteudo {
-        border: 1px solid red;
         height: 100%;
         align-items: center;
         justify-content: center;
