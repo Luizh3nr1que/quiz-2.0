@@ -2,6 +2,10 @@
     .conteudo {
         gap: 0;
     }
+
+    .QuizDetalhes {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:888px) {
