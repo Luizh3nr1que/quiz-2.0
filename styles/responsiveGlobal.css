@@ -1,3 +1,9 @@
+@media screen and (max-width:941px) {
+    .inicio {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width:918px) {
     .conteudo {
         gap: 0;
@@ -9,9 +15,23 @@
     }
 }
 
+@media screen and (max-width:806px) {
+    .inicio {
+        width: 350px;
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width:888px) {
     .descQuiz {
         width: 400px;
+    }
+}
+
+@media screen and (max-width:758px) {
+    .inicio {
+        width: 320px;
+        font-size: 15px;
     }
 }
 
@@ -25,6 +45,13 @@
     }
 }
 
+@media screen and (max-width:726px) {
+    .inicio {
+        width: 280px;
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width:695px) {
     .conteudo {
         height: 100%;
@@ -32,6 +59,11 @@
         justify-content: center;
         gap: 30px;
         flex-direction: column !important;
+    }
+
+    .inicio {
+        width: 350px;
+        font-size: 15px;
     }
 }
 
@@ -42,6 +74,11 @@
 
     .descQuiz {
         width: 100%;
+    }
+
+    .inicio {
+        width: 100%;
+        height: auto;
     }
 }
 
