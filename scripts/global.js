@@ -11,7 +11,7 @@ const inicio = document.querySelector('.inicio');
 
 
 imgHtml.addEventListener('click', () => {
-    if (container.style.display == 'none') {
+    if (container.style.display || container.style.display === 'none') {
         container.classList.add('animationSlider');
         container.style.display = 'block';
         css.style.display = 'none';
@@ -24,7 +24,7 @@ imgHtml.addEventListener('click', () => {
 })
 
 imgCss.addEventListener('click', () => {
-    if (container.style.display == 'none') {
+    if (container.style.display || container.style.display === 'none') {
         container.classList.add('animationSlider');
         container.style.display = 'block';
         html.style.display = 'none';
@@ -38,7 +38,7 @@ imgCss.addEventListener('click', () => {
 
 
 imgJs.addEventListener('click', () => {
-    if (container.style.display == 'none') {
+    if (container.style.display || container.style.display === 'none') {
         container.classList.add('animationSlider');
         container.style.display = 'block';
         html.style.display = 'none';
@@ -54,12 +54,10 @@ const imgs = document.querySelectorAll('img');
 
 imgs.forEach(img => {
     img.addEventListener('click', () => {
-        // Percorra todas as imagens e remova a classe "clicked"
         imgs.forEach(otherImg => {
             otherImg.classList.remove('clicked');
         });
 
-        // Adicione a classe "clicked" à imagem atualmente selecionada
         img.classList.add('clicked');
     });
 });
