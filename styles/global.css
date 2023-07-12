@@ -20,6 +20,7 @@ header {
     align-items: center;
     color: rgb(159, 159, 159);
     margin: 30px auto;
+    padding: 0 10px;
 
 }
 
@@ -66,7 +67,6 @@ header p {
 .quiz img {
     margin-bottom: 20px;
     cursor: pointer;
-
 }
 
 .quiz img:hover {
