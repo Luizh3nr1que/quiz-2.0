@@ -1,3 +1,5 @@
+AOS.init();
+
 //variavel perguntas atuais
 let currentQuestion = 0;
 

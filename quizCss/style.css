@@ -81,8 +81,8 @@ a {
     cursor: pointer;
     user-select: none;
     transition: .5s;
-
 }
+
 
 .option span {
     display: flex;
