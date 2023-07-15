@@ -64,6 +64,7 @@ a {
 }
 
 .question {
+    text-align: center;
     color: #FFF;
     font-size: 18px;
     margin: 20px 0;
@@ -72,14 +73,15 @@ a {
 .option {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 50px;
     background-color: rgba(29, 29, 29, 0.994);
     border-radius: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     color: #e6e6e6;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     user-select: none;
+    transition: .5s;
 
 }
 
@@ -94,16 +96,23 @@ a {
     margin-right: 10px;
     background-color: rgb(0, 0, 0);
     color: #a1a1a1;
-    transition: 0.2s;
 }
 
 .option:hover {
-    transition: 0.2s;
-    background-color: #0e8f6a;
+    background-color: #109b73;
 }
 
+.option:hover span {
+    transition: .4s;
+    color: #109b73;
+}
+
+
 .scoreArea {
-    padding: 20px;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    padding: 20px 5px;
     border-radius: 15px;
     margin: 10px;
     text-align: center;
@@ -111,32 +120,44 @@ a {
 
 }
 
+@media screen and (max-width:337px) {
+    .scoreArea {
+        width: 100%;
+        height: auto;
+    }
+
+    .scoreArea button {
+        width: 100% !important;
+    }
+}
 
 
 .scoreText1 {
     color: #f2f2f2;
-    font-size: 23px;
+    font-size: 27px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .scorePct {
     color: #0e8f6a;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .scoreText2 {
-    font-size: 16px;
+    font-size: 20px;
     color: #f2f2f2;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-
 
 
 .scoreArea button {
     border: 0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #CCC;
@@ -147,6 +168,119 @@ a {
 }
 
 .scoreArea button:hover {
-    letter-spacing: 1.5px;
     background-color: rgba(0, 0, 0, 0.712);
+}
+
+
+.confetti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: rgb(16, 252, 111);
+    top: 0;
+    opacity: 0;
+    animation: makeItRain 3000ms infinite linear;
+}
+
+.confetti-piece:nth-child(1) {
+    left: 7%;
+    transform: rotate(-10deg);
+    animation-delay: 182ms;
+    animation-duration: 2000ms;
+}
+
+.confetti-piece:nth-child(2) {
+    left: 14%;
+    transform: rotate(20deg);
+    animation-delay: 161ms;
+    animation-duration: 2076ms;
+}
+
+.confetti-piece:nth-child(3) {
+    left: 21%;
+    transform: rotate(-51deg);
+    animation-delay: 481ms;
+    animation-duration: 2103ms;
+}
+
+.confetti-piece:nth-child(4) {
+    left: 28%;
+    transform: rotate(61deg);
+    animation-delay: 334ms;
+    animation-duration: 1008ms;
+}
+
+.confetti-piece:nth-child(5) {
+    left: 35%;
+    transform: rotate(-52deg);
+    animation-delay: 302ms;
+    animation-duration: 1776ms;
+}
+
+.confetti-piece:nth-child(6) {
+    left: 42%;
+    transform: rotate(38deg);
+    animation-delay: 180ms;
+    animation-duration: 1168ms;
+}
+
+.confetti-piece:nth-child(7) {
+    left: 49%;
+    transform: rotate(11deg);
+    animation-delay: 395ms;
+    animation-duration: 1200ms;
+}
+
+.confetti-piece:nth-child(8) {
+    left: 56%;
+    transform: rotate(49deg);
+    animation-delay: 14ms;
+    animation-duration: 1887ms;
+}
+
+.confetti-piece:nth-child(9) {
+    left: 63%;
+    transform: rotate(-72deg);
+    animation-delay: 149ms;
+    animation-duration: 1805ms;
+}
+
+.confetti-piece:nth-child(10) {
+    left: 70%;
+    transform: rotate(10deg);
+    animation-delay: 351ms;
+    animation-duration: 2059ms;
+}
+
+.confetti-piece:nth-child(11) {
+    left: 77%;
+    transform: rotate(4deg);
+    animation-delay: 307ms;
+    animation-duration: 1132ms;
+}
+
+@keyframes makeItRain {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(250px);
+    }
 }

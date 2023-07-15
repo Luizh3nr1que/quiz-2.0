@@ -19,7 +19,7 @@ imgHtml.addEventListener('click', () => {
         html.style.display = 'block';
         inicio.style.display = 'none';
     } else {
-        container.style.display = 'none'
+        inicio.style.display = 'block'
     }
 })
 
@@ -62,7 +62,6 @@ imgs.forEach(img => {
     });
 });
 
-//abre o card do inicio
 const home = document.querySelector('.home');
 const descQuiz = document.querySelector('.descQuiz');
 home.addEventListener('click', () => {
@@ -73,7 +72,6 @@ home.addEventListener('click', () => {
 });
 
 
-//funçao tela de loader
 window.addEventListener("load", function () {
     const loader = document.querySelector('.fundoLoad')
     loader.style.display = "none";
